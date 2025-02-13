@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="header">
+            <span class="header__logo">A</span>
+            <nav class="header__menu">
+                <ul class="menu menu_theme_light">
+                    <li class="menu__item"><a class="menu__link" href="#about-me">About</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#my-work">Work</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#call-me">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="header__burger" aria-label="Open Menu">
+                <img class="header__burger-icon" src="./assets/icons/menu.svg" alt="Menu Icon" />
+            </button>
+        </header>
+
+        <section id="about-me" class="about-me">
+            <img class="about-me__image" src="./assets/imgs/photo_2024-06-23_21-25-35.jpg" alt="Profile Photo" />
+            <div class="about-me__box">
+                <h1 class="about-me__title"><span class="about-me__name name-color">Andrew</span> Chernenko</h1>
+                <h2 class="about-me__subtitle">About Me</h2>
+                <p class="about-me__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat, nunc eget bibendum
+                    congue, nunc ligula faucibus neque.
+                </p>
+            </div>
+        </section>
+
+        <section id="my-work" class="my-work">
+            <h2 class="my-work__title">My Work</h2>
+            <div class="my-work__box">
+                <iframe
+                    class="my-work__iframe"
+                    src="https://www.wikipedia.org/"
+                    title="YouTube Video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                >
+                </iframe>
+                <table class="my-work__table">
+                    <thead>
+                        <th>Year</th>
+                        <th>Study</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024</td>
+                            <td>Web Development</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>C++ development</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>Python Development</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>Computer science</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>Math</td>
+                        </tr>
+                        <tr>
+                            <td>2019</td>
+                            <td>Physics</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="call-me" class="call-me">
+            <h2 class="call-me__title">Get in touch</h2>
+            <div class="call-me__box">
+                <form class="call-me__form">
+                    <input class="call-me__input" type="text" placeholder="Your Name" />
+                    <input class="call-me__input" type="email" placeholder="Your Email" />
+                    <textarea class="call-me__textarea" placeholder="Your Message"></textarea>
+                    <button class="call-me__button" type="submit">Send</button>
+                </form>
+                <picture>
+                    <source
+                        srcset="./assets/imgs/qr.jpg"
+                        media="(min-width: 600px)"
+                    />
+                    <img
+                        class="call-me__img"
+                        src="./assets/imgs/qr.jpg"
+                        alt="Profile Photo"
+                    />
+                </picture>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__social">
+                    <div class="footer__logo">
+                        <span class="footer__logo-text">A</span>
+                    </div>
+                    <a href="#" class="footer__social-link"
+                        ><img src="./assets/icons/128px-Telegram_logo.svg.png" alt="Telegram"
+                    /></a>
+                    <a href="#" class="footer__social-link"
+                        ><img src="./assets/icons/VK_Compact_Logo_(2021-present) (1).svg" alt="Vk"
+                    /></a>
+                </div>
+                <div class="footer__copyright">
+                    <p>&copy; 2025 Andrew Chernenko. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

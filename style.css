@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+:root {
+    --main-bg-color: #121212;
+    --main-contrast-color: #007BFF;
+    --main-text-color: #FFFFFF;
+    --secondary-text-color: #AAAAAA;
+    --secondary-bg-color: #1E1E1E;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: 'Arial', sans-serif;
+    color: var(--main-text-color);
+    line-height: 1.6;
+    margin-left: calc(10px + 1%);
+    margin-right: calc(10px + 1%);
+}
+
+span {
+    color: var(--main-contrast-color);
+    font-weight: bold;
+}
+
+section {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--main-bg-color);
+}
+
+.header__logo {
+    font-size: 2rem;
+    color: var(--main-contrast-color);
+}
+
+.header__menu {
+    margin-left: auto;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.menu__item {
+    position: relative;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    background-color: none;
+    font-size: 1rem;
+    transition: background-color 0.6s;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.menu__link:hover {
+    color: var(--main-text-color);
+    background-color: var(--secondary-text-color);
+}
+
+.header__burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header__burger-icon {
+    height: 30px;
+    width: 30px;
+}
+
+/* About Me */
+.about-me {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me__box {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me__image {
+    max-width: 30%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: spin 5s;
+}
+
+.about-me__title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.name-color {
+    color: var(--main-contrast-color);
+}
+
+.about-me__subtitle {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.about-me__text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Call Me */
+.call-me {
+    text-align: center;
+}
+
+.call-me__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.call-me__title {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.call-me__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 300px;
+    max-width: 600px;
+    margin: 0;
+}
+
+.call-me__input,
+.call-me__textarea {
+    padding: 15px;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-size: 1rem;
+}
+
+.call-me__button {
+    padding: 15px;
+    background-color: var(--main-contrast-color);
+    color: var(--main-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.call-me__button:hover {
+    background-color: darken(var(--main-contrast-color), 10%);
+}
+
+.call-me__img {
+    width: auto;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.my-work {
+    text-align: center;
+}
+
+.my-work__title {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+iframe {
+    width: 50%;
+    height: auto;
+    border: none;
+    max-width: 600px;
+    aspect-ratio: 16 / 9;
+}
+
+.footer {
+    background-color: var(--secondary-bg-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__logo {
+    font-size: 2rem;
+    color: var(--main-contrast-color);
+}
+
+.footer__menu {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.footer__social {
+    display: flex;
+    gap: 35px;
+}
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+}
+
+.footer__social-link img {
+    height: 35px;
+    width: 35px;
+    filter: grayscale(30%)
+}
+
+.footer__copyright {
+    font-size: 0.9rem;
+    color: var(--secondary-text-color);
+}
+
+.my-work__box {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-radius: 5px;
+    border-collapse: collapse;
+    border: 1px solid #333;
+    width: 50%;
+}
+
+table th {
+    background-color: #0056b3;
+    padding: 10px;
+} 
+
+table td {
+    padding: 10px;
+
+}
+
+.table tr:nth-child(even) {
+    background-color: #1E1E1E;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #2E2E2E; 
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header__menu {
+        display: none;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .about-me__image {
+        max-width: 150px;
+        margin: 0 auto 20px;
+    }
+
+    .about-me__title {
+        font-size: 2rem;
+    }
+
+    .about-me__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .call-me__form {
+        max-width: 100%;
+    }
+
+    .call-me__button {
+        width: 100%;
+    }
+
+    .call-me__img {
+        height: 200px;
+    }
+
+    .call-me__box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me__box {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .my-work__box {
+        flex-direction: column;  
+
+    }
+
+    table {
+        width: 85%;
+    }
+
+    iframe {
+        width: 85%; 
+    }
+}
