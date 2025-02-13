@@ -22,8 +22,6 @@ body {
     font-family: 'Arial', sans-serif;
     color: var(--main-text-color);
     line-height: 1.6;
-    margin-left: calc(10px + 1%);
-    margin-right: calc(10px + 1%);
 }
 
 span {
